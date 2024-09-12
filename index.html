@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vào đây để Đăng ký, Tải game, Tham gia event,...</title>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Braah+One&family=Play&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Play', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-image: url('https://i.imgur.com/M3MZrbh.png');
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* Đặt chiều cao bằng 100% chiều cao của khung nhìn */
+            overflow: hidden; /* Khóa cuộn trang */
+            position: relative; /* Đặt để sử dụng vị trí tuyệt đối của nút */
+        }
+
+        .link {
+            position: absolute;
+            top: 70%; /* Di chuyển nút xuống 70% chiều dọc */
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .link a {
+            background-color: #924c31;
+            display: inline-block;
+            width: 140px;
+            height: 50px;
+            border-radius: 8px;
+            color: #fff;
+            line-height: 50px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite ease-in-out; /* Hiệu ứng phóng to thu nhỏ */
+        }
+
+        .link a:hover {
+            background-color: #a65f4a;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+        }
+
+        /* Hiệu ứng phóng to thu nhỏ */
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.09); /* Phóng to thêm 3% */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="link">
+        <a href="https://ngocrongnthev.com" target="_blank">Trang Chủ Game</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="assets/js/snowfall.js"></script>
+</body>
+</html>
